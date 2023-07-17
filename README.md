@@ -3,13 +3,17 @@
 [Guandu Liu*], Yukang Ding, Mading Li, Ming Sun, Xing Wen and [Bin Wang#]
 
 ## Efficiency
-![image](./doc/psnr_volume.png)
+![image](./doc/psnr_volume.png#pic_center=50x50)
 ## Overview
 The core idea of our paper is RC Module.
 ![image](./doc/overview.png)
+
+## Usage
+Our code follows the architecture of [MuLUT](https://github.com/ddlee-cn/MuLUT). In the sr directory, we provide the code of training RC-LUT networks, transferring RC-LUT network into LUts, finetuning LUTs, and testing LUTs, taking the task of single image super-resolution as an example.
+In the `common/network.py`, `RC_Module` is the core module of our paper.
 ### Dataset
 
-Please following the instructions of [training](./data/DIV2K/README.md). And you can also prepare [SRBenchmark]()
+Please following the instructions of [training](./data/DIV2K/README.md). And you can also prepare [SRBenchmark](./data/DIV2K/README.md)
 ### Installation
 Clone this repo
 ```
